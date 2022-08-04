@@ -1,5 +1,5 @@
-halesh.exe : main.o big3.o fact.o rev.o
-	gcc -o halesh.exe main.o big3.o fact.o rev.o
+halesh.exe : main.o big3.o fact.o rev.o palind.o sort.o fibonacci.o 
+	gcc -o halesh.exe main.o big3.o fact.o rev.o palind.o sort.o fibonacci.o
 main.o:main.c
 	gcc -c main.c
 big3.o:big3.c
@@ -8,3 +8,9 @@ fact.o:fact.c
 	gcc -c fact.c
 rev.o:rev.c
 	gcc -c rev.c
+palind.o:palind.c
+	gcc -c palind.c
+sort.o:sort.c
+	gcc -c sort.c
+fibonacci.o:fibonacci.c
+	gcc -c fibonacci.c
